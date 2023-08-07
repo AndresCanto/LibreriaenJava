@@ -2,7 +2,7 @@ package jugueteria;
 
 public class Juguete 
 {
-	private int id_jug; //primary key
+	private final int id_jug; //primary key
 	private String nom_jug;
 	private float pre_jug;
 	private String marc_jug;
@@ -17,6 +17,7 @@ public class Juguete
 		this.cat_jug = cat_jug;
 		this.stock_jug = stock_jug;
 	}
+//	no ponemos el setId para evitar que se cambie el valor del Id
 	public int getId_jug() {
 		return id_jug;
 	}
